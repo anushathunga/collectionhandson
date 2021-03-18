@@ -1,0 +1,127 @@
+import java.text.DecimalFormat;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class UsingMainCode  {
+	  public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    int n = s.nextInt();
+	    HashMap<Integer, Float> hm = new HashMap<Integer, Float>();
+	    for (int i = 0; i < n; i++) {
+	      hm.put((s.nextInt()), s.nextFloat());
+	    }
+	    System.out.println(display(hm));
+	  }
+	  public static String display(HashMap<> hm) {
+	    float sum = 0;
+	    int count = 0;
+	    DecimalFormat d = new DecimalFormat("#.00");
+	    Iterator<Integer> i = hm.keySet().iterator();
+	    while (i.hasNext()) {
+	      int a = i.next();
+	      if (a% 2 == 0) {
+	        sum = (float) (sum + hm.get(a));
+	        count++;
+	      }
+	    }
+	    float e= sum / count;
+	    return d.format(e);
+	  }
+}
+
+.....................................................................................
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Scanner;
+class UserMainCode1{
+	public static int sizeOfResultandHashMap(HashMap<Integer ,String>hm){ 
+		int n,count=0;
+		Iterator<Integer> i=hm.keySet().iterator();
+		while(i.hasNext()){
+			n=it.next();
+		if(n%3!=0)
+			count++;
+		}
+		return count;
+}
+public static void main(String[] args){
+	Scanner s=new Scanner(System.in);
+		int m=in.nextInt();
+		HashMap<Integer,String>hm=new HashMap<>();
+		for(int i=0;i<n;i++)
+		{
+			hm.put(s.nextInt(),s.next());
+		}
+		System.out.println(UserMainCode1.sizeOfResultandHashMap(hm));
+	}
+}
+
+......................................................................................
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Scanner;
+
+class Main { 
+	public static String sizeOfResultandHashMap(HashMap<Integer ,String>hm){ 
+		int m=0; 
+		String s1="";
+		Iterator<Integer> i=hm.keySet().iterator();
+		while(i.hasNext()){
+			int a=i.next();
+			if(a>max)
+			{
+				m=a;
+				String s2=hm.get(a);
+				s1=s2;
+			}
+		}
+		return s1;
+}
+public static void main(String[] args) {
+	Scanner s=new Scanner(System.in);
+	int n=s.nextInt();
+	HashMap<Integer,String>hm=new HashMap<>();
+	for(int i=0;i<n;i++) { 
+		hm.put(s.nextInt(),s.next());
+	}
+	System.out.println(Main.sizeOfResultandHashMap(hm));
+	}
+}
+..............................................................................
+import java.util.*;
+public class Main1{
+public static void main(String[] args) {
+	Scanner s = new Scanner(System.in);
+		int n = Integer.parseInt(s.nextLine());
+			LinkedHashMap<String, String> hm = new LinkedHashMap<>();
+			for (int i = 0; i < n; i++) {
+				String k1= sc.nextLine();
+				String s1 = sc.nextLine();
+				hm.put(k1, s1);
+			}
+			String m= s.nextLine();
+			LinkedHashMap<String, String> hm = new LinkedHashMap<String, String>();
+			hm = dis(hm, m);
+			Iterator<String> i = hm1.keySet().iterator();
+			while (i.hasNext()) {
+				String s2 = i.next();
+				System.out.println(s2);
+			}
+}
+ 
+public static LinkedHashMap<String, String> dis(LinkedHashMap<String,String> h1, String n) {
+	int k=0;
+	LinkedHashMap<String, String> hm = new LinkedHashMap<>();
+	Iterator<String> it = h1.keySet().iterator();
+	while (it.hasNext()) {
+		String s2 = i.next();
+		String s3 = h1.get(s2);
+		if (s3.equals(m))
+			hm.put(s2, s3);
+		}
+		return hm;
+	}
+ 
+}
+

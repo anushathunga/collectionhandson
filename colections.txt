@@ -1,0 +1,83 @@
+package com.day8;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class N {
+
+	public static void main(String[] args) {
+		
+		List<Integer> m=new ArrayList<>();
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter n");
+		int n=s.nextInt();
+		
+		for(int i=0;i<n;i++) {
+			//System.out.println("enter matche");
+			m.add(s.nextInt());
+			}
+		int r=0;
+		for(int i=0;i<n;i++) {
+			r+=m.get(i);
+			
+		}
+		System.out.println(r);
+		float avg=(float)r/n;
+		System.out.println(avg);
+		
+		
+	}
+
+}
+..............................................................................
+import java.util.Scanner;
+import java.util.TreeSet;
+
+public class N {
+
+	public static void main(String[] args) {
+		
+		TreeSet<Integer> r=new TreeSet<>();
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		for(int i=0;i<n;i++) {
+			r.add(s.nextInt());
+			
+		}
+		System.out.println();
+		for(int a:r) {
+			System.out.println(a);
+		}
+		
+	}
+
+}
+
+..........................................................................
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class N {
+
+	public static void main(String[] args) {
+		
+		List<String> r=new ArrayList<>();
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		for(int i=0;i<n;i++) {
+			r.add(s.nextLine());
+			
+		}
+		System.out.println("enter number");
+		String v=s.nextLine();
+		int f=Collections.frequency(r,v);
+		System.out.println("count"+f);
+		}
+		
+	}
+
+
+
